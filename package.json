@@ -1,6 +1,6 @@
 {
   "name": "code-coverage-dangerjs-plugin",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Danger.JS plugin to display the code coverage on a pull request by commenting it via the CI",
   "main": "./build/index.js",
   "author": "Guillaume Piedigrossi <guillaume.piedigrossi@gadz.org> (https://www.bam.tech/) ",
@@ -14,8 +14,11 @@
   "license": "MIT",
   "scripts": {
     "build": "tsc",
-    "prepare": "yarn build"
+    "prepare": "yarn run build"
   },
+  "files": [
+    "build/**/*"
+  ],
   "devDependencies": {
     "@types/lodash": "^4.14.150",
     "@types/markdown-table": "^2.0.0",
